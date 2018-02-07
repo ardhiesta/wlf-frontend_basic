@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Form Registrasi</title>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> 
+	
+	<style>
+		body {
+			 font-family: 'Titillium Web', sans-serif;
+		}
+		
+		.button {
+			background-color: #6666ff;
+			border: none;
+			color: white;
+			padding: 15px 15px;
+		}
+		
+		#regForm {
+			padding: 10px;
+			widht: 390px;
+		}
+		
+		#regForm label {
+			text-align: left;
+			padding-right: 10px;
+			width: 80px;
+		}
+		
+		#regForm .field {
+			width: 300px;
+		}
+		
+		#regForm label, #regForm .field {
+			display: block;
+			float: left;
+			margin-bottom: 10px;
+		}
+	</style>
+	</head>
+	<body>
+		<h1>Form Registrasi</h1>
+		<div id="regForm">
+			<form action="#">
+				<label>Nama</label>
+				<input class="field" type="text" name="nama" />
+				<br>
+				<label>Jenis Kelamin</label>
+				<input type="radio" name="gender" value="L" checked>L
+				<input type="radio" name="gender" value="P">P
+				<br>
+				<label>Tanggal Lahir</label>
+				<input class="field" type="text" name="tgl" />
+				<br>
+				<label>Alamat</label>
+				<textarea class="field" name="alamat"></textarea>
+				<br>
+				<input class="button" type="submit" value="Submit">
+			</form>
+		</div>
+	</body>
+</html> 
