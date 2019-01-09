@@ -17,27 +17,39 @@
 		}
 		
 		#regForm {
-			padding: 10px;
-			widht: 390px;
+			padding-left: 10px;
+			width: 390px;
 		}
 		
 		#regForm label {
-			text-align: right;
-			padding-right: 10px;
 			width: 80px;
 			display: inline-block;
 			margin-bottom: 10px;
+			
+			//text-align: right;
+			//padding-right: 10px;
 		}
 		
 		#regForm input[type="text"], #regForm textarea {
-			width: 300px;
+			//width: 300px;
 		}
 	</style>
+	
+	<script>
+	function validateForm() {
+		var x = document.forms["myForm"]["nama"].value;
+		var y = document.forms["myForm"]["tgl"].value;
+		if (x == "" || y == "") {
+			alert("Nama dan tanggal lahir harus diisi");
+			return false;
+		}
+	}
+	</script>
 	</head>
 	<body>
 		<h1>Form Registrasi</h1>
 		<div id="regForm">
-			<form action="#">
+			<form action="#" name="myForm" onsubmit="return validateForm()">
 				<label>Nama</label>
 				<input type="text" name="nama" />
 				<br>
